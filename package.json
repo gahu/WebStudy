@@ -1,0 +1,19 @@
+{
+  "name": "webstudy",
+  "version": "1.0.0",
+  "description": "나의 기술을 정리하고 보여줄 수 있는 Blog 페이지 구현",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gahu/WebStudy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gahu/WebStudy/issues"
+  },
+  "homepage": "https://github.com/gahu/WebStudy#readme"
+}
