@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/gahu/WebStudy/issues"
   },
-  "homepage": "https://github.com/gahu/WebStudy#readme"
+  "homepage": "https://github.com/gahu/WebStudy#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "browser-sync": "^2.24.6",
+    "cpx": "^1.5.0",
+    "npm-run-all": "^4.1.3"
+  }
 }

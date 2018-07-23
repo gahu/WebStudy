@@ -28,16 +28,25 @@
  keywords : 이러한 프로젝트를 찾고자 하는 사람들에게 유용하게 쓰인다. "file", "d3" 등의 키워드
  author : 개인이나 팀의 이름, 또는 회사이름 등
  license : 라이센스에 대한 내용을 명시, 기본적으로 MIT를 설정해본다.
- - npm 모듈 설치
+ - npm 모듈 설치(package.json에 정의가 안되어 있을 때)
+ ```
+ npm install babel-cli    
+ npm install browser-sync   
+ npm install cpx   
+ npm install npm-run-all
+ ```
+ - npm 모듈 설치(package.json에 정의가 되어 있을 때)
  ```
  npm install
  ```
-
-## start
+ 
+## DEV
+### start
  ```
  npm run start
  ```
-## build
+## PROD
+### build
  ```
  npm run build
  ```
