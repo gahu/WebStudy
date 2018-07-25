@@ -3,11 +3,11 @@
 
 ## Environment Setting
  - [nodejs 설치](http://nodejs.org/en/)
- - nodejs 설치 확인
+ - nodejs 설치 확인, 18-07-23기준 최신버전 v8.11.3 LTS
  ```
  node -v
  ```
- - npm 설치 확인
+ - npm 설치 확인, 18-07-23기준 최신버전 v6.2.0
  ```
  npm -v
  ```
@@ -39,9 +39,11 @@
  ```
  npm install
  ```
- 
+
 ## DEV
 ### start
+ package.json에 script부분에 start가 정의되어 있을 때
+ "start": "run-p copy:watch babel:watch browser-sync"
  ```
  npm run start
  ```

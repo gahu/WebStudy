@@ -4,7 +4,13 @@
   "description": "나의 기술을 정리하고 보여줄 수 있는 Blog 페이지 구현",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "copy": "cpx \"src/*.html\" \"dist/\"",
+    "babel": "babel src/ --watch --out-dir dist/",
+    "copy:watch": "npm run copy -- -w",
+    "babel:watch": "npm run babel -- -w",
+    "browser-sync": "browser-sync dist/ -w",
+    "build": "run-s copy babel",
+    "start": "run-p copy:watch babel:watch browser-sync"
   },
   "repository": {
     "type": "git",
