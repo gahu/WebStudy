@@ -4,7 +4,7 @@ script:
   - echo hello
   - npm run build
 deploy:
-  provider: page
+  provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
