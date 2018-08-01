@@ -1,13 +1,15 @@
-async function test(params) {
-  console.log("HI!");
-}
+import hello from './hello';
 
-function component() {
-  var element = document.createElement("div");
+hello();
+// const hello = require('./hello');
 
-  element.innerHTML = "study good";
-  element.classList.add("hello");
-  return element;
-}
+// const {
+//   hi
+// } = hello;
 
-document.body.appendChild(component());
+// hello();
+// hi();
+
+// commonjs동작 방식
+// var hello = require('./hello');
+// var hi = hello.hi;

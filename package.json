@@ -10,6 +10,7 @@
     "babel:watch": "npm run babel -- -w",
     "browser-sync": "browser-sync dist/ -w",
     "build": "run-s copy babel",
+    "browserify": "browserify ./src/main.js -o dist/bundle.js -t [ babelify ]",
     "start": "run-p copy:watch babel:watch browser-sync"
   },
   "repository": {
@@ -26,6 +27,11 @@
     "babel-cli": "^6.26.0",
     "browser-sync": "^2.24.6",
     "cpx": "^1.5.0",
-    "npm-run-all": "^4.1.3"
+    "npm-run-all": "^4.1.3",
+    "browserify": "^16.2.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^9.0.0"
   }
 }
