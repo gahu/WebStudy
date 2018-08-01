@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "copy": "cpx \"src/*.html\" \"dist/\"",
-    "babel": "babel src/ --watch --out-dir dist/",
+    "babel": "babel src/ --out-dir dist/",
     "copy:watch": "npm run copy -- -w",
     "babel:watch": "npm run babel -- -w",
     "browser-sync": "browser-sync dist/ -w",
