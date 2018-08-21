@@ -11,7 +11,8 @@
     "browser-sync": "browser-sync dist/ -w",
     "build": "run-s copy babel",
     "browserify": "browserify ./src/main.js -o dist/bundle.js -t [ babelify ]",
-    "start": "run-p copy:watch babel:watch browser-sync"
+    "start": "run-p copy:watch babel:watch browser-sync",
+    "lint": "eslint src/**/**.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
-    "babelify": "^9.0.0"
+    "babelify": "^9.0.0",
+    "eslint": "^5.2.0",
+    "eslint-plugin-react": "^7.10.0"
   }
 }

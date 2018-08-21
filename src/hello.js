@@ -10,11 +10,11 @@
 
 // commonjs의 동작 방식
 function hello() {
-    console.log('Hello');
+	console.log("Hello");
 }
 
 hello.hi = function() {
-    console.log('hi');
-}
+	console.log("hi");
+};
 
-module.exports = hello
+module.exports = hello;
